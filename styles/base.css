@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #006d77;
+    --secondary-color: #83c5be;
+    --accent1-color: #ffddd2;
+    --accent2-color: #e29578;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    display: grid;
+    height: 100vh;
+    grid-template: 150px 1fr 100px/ 300px 1fr 300px;
+}
+
+header {
+    background: var(--primary-color);
+    grid-column: 1 / 4;
+    color: white;
+}
+
+img {
+    max-height: 100px;
+}
+
+h1 {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    color: #eee;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 1rem;
+    display: flex;
+    grid-column: 1 / 4;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid rgb(0 0 0 / 0.2);
+    border-radius: 1rem;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0.5rem;
+}
+
+.card h2{
+    background: var(--primary-color);
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: #eee;
+    text-align: center;
+}
+
+.card h3 {
+    text-align: center;
+    padding: 0.25rem;
+    border-bottom: 1px solid #000;
+    /* max-width: 500px; */
+}
+
+.card p {
+    padding: 1rem;
+}
+
+.card li {
+    margin: 2rem;
+}
+
+.card article {
+    position: relative;
+    display: flex;
+}
+
+.card article img {
+    margin: 1rem;
+}
+
+.card article figcaption {
+    font-style: italic;
+    text-align: center;
+    padding: 2px;
+}
+
+footer {
+    background: var(--primary-color);
+    padding: 1.5rem;
+    text-align: center;
+    grid-column: 1 / 4;
+    color: white;
+}
