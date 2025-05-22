@@ -1,0 +1,16 @@
+@media (min-width: 800px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .navigation {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .navigation a {
+        flex: 1 1 100%;
+    }
+}

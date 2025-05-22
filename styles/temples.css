@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #006d77;
+
+}
+
+body {
+    font-family: "Ancizar Sans", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: column;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    color: #eee;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: larger;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 1rem auto;
+    max-width: 960px;
+    padding: .5rem;
+}
+
+.maintitle {
+    font-weight: 700;
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+}
+
+figure {
+    background-color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: .5rem;
+}
+
+figcaption {
+    font-size: smaller;
+    text-align: center;
+}
+
+footer {
+    background: var(--primary-color);
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+}
