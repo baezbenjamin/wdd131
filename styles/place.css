@@ -52,6 +52,10 @@ article p {
     padding: 5px;
 }
 
+#windchill {
+    display: inline;
+}
+
 footer {
     background-color: var(--primary-color);
     color: white;
