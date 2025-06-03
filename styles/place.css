@@ -40,6 +40,7 @@ article {
     justify-self: center;
     width: 100%;
     background-color: white;
+    justify-items: center;
 }
 
 article h2 {
@@ -50,6 +51,11 @@ article h2 {
 article p {
     text-align: center;
     padding: 5px;
+}
+
+.weather img {
+    width: 150px;
+    height: 150px;
 }
 
 #windchill {
@@ -72,6 +78,7 @@ footer {
     }
 
     article {
+        justify-items: unset;
         justify-self: unset;
         width: 300px;
         background-color: #ffffff99;
