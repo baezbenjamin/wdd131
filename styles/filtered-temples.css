@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #006d77;
+
+}
+
+body {
+    font-family: "Ancizar Sans", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    padding: 1rem;
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: column;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    color: #eee;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: larger;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.maintitle {
+    font-weight: 700;
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+}
+
+section {
+    width: 100%;
+    background-color: aliceblue;
+    justify-items: center;
+    padding: 1rem;
+    border: 1px solid gray;    
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    box-shadow: 0 0 30px gray;
+}
+
+.container p {
+    font-size: smaller;
+}
+
+footer {
+    background: var(--primary-color);
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    /* position: absolute; */
+    /* width: 100%; */
+    margin-top: 10px;
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.open a {
+    display: block;
+}
