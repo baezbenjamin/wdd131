@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Practice</title>
+    <script src="scripts/lazyload.js" defer></script>
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+    <main>
+        <h1>Lazy Load Images</h1>
+        <picture>
+            <img src="https://loremflickr.com/400/900/paris" loading="lazy" alt="" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://loremflickr.com/400/800/paris" loading="lazy" alt="" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://loremflickr.com/400/700/paris" loading="lazy" alt="" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://loremflickr.com/400/600/paris" loading="lazy" alt="" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://loremflickr.com/400/750/paris" loading="lazy" alt="" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://loremflickr.com/400/850/paris" loading="lazy" alt="" width="400" height="600">
+        </picture>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🐊 Benjamin Baez 🐊 Paraguay</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
