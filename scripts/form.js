@@ -46,14 +46,13 @@ products.forEach(product => {
     productSelect.appendChild(option);
 })
 
-const visitsCounter = document.getElementById("visits");
+const visitsCounter = document.querySelector("#visits");
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
 if (numVisits !== 0) {
-    visitsDisplay.textContent = numVisits;
-}
-else {
-    visitsDisplay.textContent = `Thanks for your first Submition!`;
+    visitsCounter.textContent = numVisits;
+} else {
+    visitsCounter.textContent = `Thanks for your first Submition!`;
 }
 numVisits++;
 
