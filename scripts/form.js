@@ -45,32 +45,3 @@ products.forEach(product => {
     
     productSelect.appendChild(option);
 })
-
-// const visitsCounter = document.querySelector(".visits");
-// let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
-
-// if (numVisits !== 0) {
-//     visitsCounter.textContent = numVisits;
-// } else {
-//     visitsCounter.textContent = `Thanks for your first Submition!`;
-// }
-// numVisits++;
-
-// localStorage.setItem("numVisits-ls", numVisits);
-
-// Get the current count from localStorage
-let visitCount = localStorage.getItem("visitCount");
-
-// If no count exists, initialize it to 0
-if (visitCount === null) {
-    visitCount = 0;
-}
-
-// Convert it to a number and increment
-visitCount = Number(visitCount) + 1;
-
-// Update localStorage with the new count
-localStorage.setItem("visitCount", visitCount);
-
-// Display it on the page
-document.getElementById("visitor-count").textContent = `Visitors: ${visitCount}`;
