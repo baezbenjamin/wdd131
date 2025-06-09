@@ -22,7 +22,8 @@ fieldset{
     border-radius: 6px;
     padding: .5rem 2%;
     background-color: #a8d1d4;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     justify-self: center;
 }
 
