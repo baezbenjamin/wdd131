@@ -83,7 +83,7 @@ header {
 .hero h1 {
     color: var(--secondary-color);
     position: absolute;
-    top: 2em;
+    top: 1em;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -91,7 +91,7 @@ header {
 
 .hero a {
     position: absolute;
-    top: 11em;
+    top: 8em;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--primary-color);
