@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1758B0;
+    --secondary-color: #90DDF0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 20px 0;
+    color: white;
+}
+
+.logo {
+    border-radius: 0.5rem;
+    width: 150px;
+    height: auto;
+    margin-left: 2rem;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.open a {
+    display: block;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero h1 {
+    color: var(--secondary-color);
+    position: absolute;
+    top: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.hero a {
+    position: absolute;
+    top: 11em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+section img {
+    padding-top: 0.5em;
+    max-width: 300px;
+}
+
+section h2 {
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+section p {
+    margin: 1em;
+}
+
+.lesson {
+    margin-top: 10px;
+    background-color: #90DDF0;
+    justify-self: center;
+    justify-items: center;
+    padding: 1em;
+}
+
+.teacher {
+    margin-top: 1rem;
+    background-color: #90DDF0;
+    justify-self: center;
+    justify-items: center;
+    padding: 1em;
+}
+
+.visits {
+    margin-top: 1rem;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.visits h4, p{
+    display: inline;
+}
+
+footer {
+    background-color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.reference {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.reference a {
+    color: white;
+    margin-top: 7rem;
+}
+
+.social img {
+    width: 3em;
+    margin: 2em 2em 0;
+}
+
+@media (min-width: 800px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .navigation {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+    }
+    #menu {
+        display: none;
+    }
+
+    .lesson {
+        display: flex;
+        width: 800px;
+        height: auto;
+        background-color: var(--secondary-color);
+        border-radius: 1rem;
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .lesson h2 {
+        color: var(--primary-color);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .lesson img {
+        max-width: 350px;
+        margin-right: 50px;
+        border-radius: 1rem;
+    }
+
+    .teacher {
+        display: flex;
+        width: 800px;
+        height: auto;
+        background-color: var(--secondary-color);
+        border-radius: 1rem;
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .teacher h2 {
+        color: var(--primary-color);
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .teacher img {
+        max-width: 350px;
+        margin-right: 50px;
+        border-radius: 1rem;
+    }
+
+    .visits {
+        width: 800px;
+        border-radius: 0.5rem;
+        justify-self: center;
+    }
+
+}
