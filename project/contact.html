@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - The StarTalking</title>
     <meta name="description"
-        content="Fill this form so we can contact you and start your learning path">
+        content="Fill out this form so we can contact you and start your learning path">
     <meta name="author" content="Benjamin Baez">
-    <link rel="stylesheet" href="styles/lessons.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap"
@@ -28,7 +28,30 @@
         </nav>
     </header>
     <main>
-
+        <h1 class="maintitle">Course Aplication</h1>
+        <form method="get" action="index.html">
+            <fieldset>
+                <div>I want the course for:</div>
+                <label><input type="radio" name="final-user" value="this">Me</label>
+                <label><input type="radio" name="final-user" value="other">Someone Else</label>
+                <label>First Name* <input type="text" name="first-name" required></label>
+                <label>Last Name* <input type="text" name="last-name" required></label>
+                <label>Email* <input type="email" name="email" placeholder="myemail@company.com" required></label>
+                <label>Select a course...
+                    <select name="course" id="course" required>
+                        <option value="" selected disabled>Please Select &#9662;</option>
+                    </select>
+                </label>
+                <div>Why do you want to learn English?</div>
+                <label><input type="checkbox" name="carreer" value="yes"> Boost my carreer</label>
+                <label><input type="checkbox" name="education" value="yes"> Support my Education</label>
+                <label><input type="checkbox" name="travel" value="yes"> Prepare for travel</label>
+                <label><input type="checkbox" name="connect" value="yes"> Connect with People</label>
+                <div>Write questions or request more information about the courses</div>
+                <label><textarea name="request" id="request"></textarea></label>
+                <input type="submit" value="Send Form">
+            </fieldset>
+        </form>
     </main>
     <footer>
         <p>&copy;<span id="currentyear"></span> 🐊 The StarTalking 🐊 Benjamin Baez</p>

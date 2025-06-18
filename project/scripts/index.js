@@ -5,7 +5,7 @@ const displayRandomMessage = document.querySelector(".random-message");
 
 const visitsDisplay = document.querySelector(".visits-count");
 
-let numVisits = Number(localStorage.getItem("numVisits-ls")) || 0;
+let numVisits = Number(localStorage.getItem("visitsCounter")) || 0;
 
 if (numVisits !== 0 && numVisits !== 1) {
     visitsDisplay.innerHTML = `You have visited this page ${numVisits} times.`;
@@ -19,7 +19,7 @@ else {
 
 numVisits++;
 
-localStorage.setItem("numVisits-ls", numVisits);
+localStorage.setItem("visitsCounter", numVisits);
 
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
