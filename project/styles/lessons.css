@@ -101,6 +101,10 @@ footer {
     margin: 1.5rem;
 }
 
+.subtitle {
+    margin-left: 10px;
+}
+
 .filter {
     margin-top: 1.5rem;
     display: flex;
@@ -156,6 +160,30 @@ img {
     font-size: smaller;
 }
 
+.contact {
+    justify-self: center;
+    margin-top: 1rem;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    max-width: 500px;
+}
+
+.contact p {
+    margin-right: 10px;
+}
+
+.contact a {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    text-align: center;
+    min-width: 100px;
+    max-height: 40px;
+}
 
 @media (min-width: 800px) {
     header {
@@ -197,5 +225,9 @@ img {
 
     .container {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .subtitle {
+        margin-left: unset;
     }
 }

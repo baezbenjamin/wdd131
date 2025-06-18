@@ -136,6 +136,7 @@ section p {
     background-color: var(--secondary-color);
     padding: 1rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .visits h4, p{
@@ -235,4 +236,7 @@ footer {
         justify-self: center;
     }
 
+    .visits {
+        text-align: center;
+    }
 }
